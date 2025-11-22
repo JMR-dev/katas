@@ -35,8 +35,8 @@ The project should be built using any modern frontend framework (e.g., React, Vu
 - Use flexible layout techniques (grid, flexbox).
 - Avoid fixed widths or pixel-specific sizing.
 
+## ✨ ✨ Optional Enhancements ✨ ✨
 
-## ✨ ✨ Optional Enhancements ✨ ✨ 
 If you find yourself with extra time or inspiration, feel free to extend your solution with any of the ideas below. These are completely optional and not expected — no worries at all if you choose to skip them!
 
 ### Favorites

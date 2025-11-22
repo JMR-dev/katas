@@ -9,6 +9,7 @@ export default defineConfig({
     setupFiles: ['./setup-tests.ts'],
     globals: true,
     environment: 'jsdom',
-    include: ['src/tests/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}']
+    include: ['src/tests/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+    restoreMocks: true
   }
 })
