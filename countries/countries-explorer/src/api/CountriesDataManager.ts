@@ -33,8 +33,9 @@ export async function getCountriesDetailsData(
   name: string
 ): Promise<CountryDetails> {
   const response: Response = await fetch(
-    `https://restcountries.com/v3.1/name/${name}?fullText=true&fields=subregion,languages,currencies,timezones,borders`
+    `https://restcountries.com/v3.1/name/${name}?fullText=true&fields=name,subregion,languages,currencies,timezones,borders`
   );
   handleResponseError(response);
-  return await response.json();
+  const countryDetaildata = await response.json();
+  return countryDetaildata[0];
 }
