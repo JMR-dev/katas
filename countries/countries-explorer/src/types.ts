@@ -7,19 +7,21 @@ export interface Country {
   name: {
     common: string;
     official: string;
+  };
+  region: string;
+  capital?: string[];
+  population: string;
+}
+
+export interface CountryDetails {
+  name: {
     nativeName: {
-      dan: {
+      [key: string]: {
         official: string;
         common: string;
       };
     };
   };
-  region: string;
-  capital: [string];
-  population: string;
-}
-
-export interface CountryDetails extends Country {
   subregion: string;
   languages: {
     [key: string]: string;
@@ -31,5 +33,5 @@ export interface CountryDetails extends Country {
     };
   };
   timezones: string[];
-  borders: string[];
+  borders?: string[];
 }
