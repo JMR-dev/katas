@@ -4,6 +4,7 @@ import {
   getCountriesDetailsData,
 } from "../../api/CountriesDataManager";
 import type { Country, CountryDetails } from "../../types";
+import { describe, vi } from "vitest";
 
 describe("API data fetch happy path", () => {
   test("API data fetch for Countries browsing view matches required structure", async () => {
