@@ -1,0 +1,48 @@
+h1 {
+  text-align: center;
+  color: white;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+li {
+    list-style: none;
+    background-color: #222;
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 200px;
+    text-align: left;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+body {
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 2rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.span {
+        cursor: pointer;
+        color: blue;
+        text-decoration: underline;
+}
