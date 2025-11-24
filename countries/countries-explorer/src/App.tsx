@@ -18,7 +18,7 @@ export default function App() {
     getCountriesData().then((data) => {
       const sorted = data.sort(alphabeticalSort).map((country) => ({
         ...country,
-        capital: country.capital.slice().sort() as [string],
+        capital: country.capital?.slice().sort() as [string],
       }));
       setCountries(sorted);
     });
@@ -52,7 +52,7 @@ export default function App() {
                 <div>Population: {country.population.toLocaleString()}</div>
                 <div>
                   Capital(s):
-                  {country.capital.map((cap) => cap).join(", ") ?? "No Capital"}
+                  {country.capital?.map((cap) => cap).join(", ") ?? "No Capital"}
                 </div>
                 <div>
                   <button
@@ -131,7 +131,7 @@ export default function App() {
             <div>Population: {country.population.toLocaleString()}</div>
             <div>
               Capital(s):
-              {country.capital.map((cap) => cap).join(", ") ?? "No Capital"}
+              {country?.capital?.map((cap) => cap).join(", ") ?? "No Capital"}
             </div>
             <div>
               <button onClick={() => handleCountryClick(country.name.common)}>
